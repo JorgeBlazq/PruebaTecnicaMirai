@@ -1,0 +1,18 @@
+{
+    "default": {
+      "paths": ["features/**/*.feature"],
+      "requireModule": ["ts-node/register"],
+      "require": ["support/**/*.ts"],
+      "publishQuiet": true,
+      "parallel": 3,
+      "format": [
+        "@cucumber/pretty-formatter",
+        "json:reports/cucumber-report.json",
+        "html:reports/cucumber-report.html"
+      ],
+      "snippetInterface": "async-await",
+      "worldParameters": {
+        "wikipedia_homepage": "https://www.wikipedia.org/"
+      }
+    }
+  }
